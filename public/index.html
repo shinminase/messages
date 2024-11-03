@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Animated Messages</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="index.js" defer></script>
+    </head>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+        }
+        .message {
+            position: fixed;
+            bottom: 20px;
+            text-align: center;
+            font-size: 24px;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+    </style>
+    <body>
+        <img
+            src="https://lastfm.freetls.fastly.net/i/u/ar0/116f0aea8efb67b74715e4367c5d659c.png"
+            style="margin: auto"
+        />
+        <div id="message" class="message"></div>
+    </body>
+</html>
