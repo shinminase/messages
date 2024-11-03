@@ -2,21 +2,27 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <title>Animated Messages</title>
+        <link rel="icon" href="icon.png" type="image/x-icon">
+        <title>u and me</title>
         <link rel="stylesheet" href="styles.css" />
         <script src="index.js" defer></script>
     </head>
     <style>
         body {
             background-color: black;
+            background-image: url('https://lastfm.freetls.fastly.net/i/u/ar0/116f0aea8efb67b74715e4367c5d659c.gif');
+            background-size: none; 
+            background-position: center; 
+            background-repeat: no-repeat; 
             color: white;
             font-family: Arial, sans-serif;
             margin: 0;
-            height: 100vh;
+            height: 100vh; 
             display: flex;
-            align-items: flex-end;
-            justify-content: center;
+            align-items: flex-end; 
+            justify-content: center; 
         }
+
         .message {
             position: fixed;
             bottom: 20px;
@@ -27,10 +33,7 @@
         }
     </style>
     <body>
-        <img
-            src="https://lastfm.freetls.fastly.net/i/u/ar0/116f0aea8efb67b74715e4367c5d659c.png"
-            style="margin: auto"
-        />
+       
         <div id="message" class="message"></div>
     </body>
 </html>
